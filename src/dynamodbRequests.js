@@ -8,7 +8,7 @@ AWS.config.update({ region: "us-west-2" });
 awsClient = new AWS.DynamoDB();
 docClient = new DOC.DynamoDB(awsClient);
 
-getRecords = function(tableName, conditions, record, callback, next) {
+getRecords = function(tableName, conditions, page, next) {
     params = {};
     params.TableName = tableName;
     params.KeyConditions =  [];
@@ -20,7 +20,7 @@ getRecords = function(tableName, conditions, record, callback, next) {
             console.log("dynamodb error" + err);
             callback();
         } else {
-           next(null, data, record);
+           next(null, data);
         }
     });
 }
