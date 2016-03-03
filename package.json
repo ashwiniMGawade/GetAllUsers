@@ -1,0 +1,19 @@
+{
+  "name": "getallusers",
+  "version": "1.0.0",
+  "description": "lambda function triggered by the aws api call to return all users",
+  "main": "getAllUsers.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashwiniMGawade/GetAllUsers.git"
+  },
+  "author": "ashwini gawade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashwiniMGawade/GetAllUsers/issues"
+  },
+  "homepage": "https://github.com/ashwiniMGawade/GetAllUsers#readme"
+}
